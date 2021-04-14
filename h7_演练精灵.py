@@ -1,7 +1,7 @@
 import pygame
 from plane_sprites import *
 import sys
-sys.setrecursionlimit(1000)
+sys.setrecursionlimit(100000000)
 pygame.init()
 
 # 创建游戏窗口,480*700
@@ -16,7 +16,7 @@ screen.blit(bg, (0, 0))
 # 绘制英雄飞机
 hero = pygame.image.load("./飞机大战素材/hero.png")
 screen.blit(hero, (200, 500))
-# pygame.display.update()
+pygame.display.update()
 
 # 创建时钟对象
 clock = pygame.time.Clock()
